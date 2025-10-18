@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phúc Sinh Sơn La | Liên Hệ Nhanh</title>
+    <title>Phuc Sinh Son La | Quick Contact</title>
     <style>
         *, *::before, *::after {
             box-sizing: border-box;
         }
 
         /* -------------------------------------------------------------------------- */
-        /* CSS TOÀN CỤC & TỐI ƯU DI ĐỘNG */
+        /* GLOBAL CSS & MOBILE OPTIMIZATION */
         /* -------------------------------------------------------------------------- */
         body {
-            /* Font chữ hiện đại, gần với iOS */
+            /* Modern, iOS-like font stack */
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -21,9 +21,9 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            /* Nền màu Pastel nhẹ nhàng cho hiệu ứng Glassmorphism nổi bật */
+            /* Pastel gradient background for Glassmorphism effect */
             background: linear-gradient(135deg, #a8dadc 0%, #457b9d 100%);
-            color: #1d3557; /* Màu chữ xanh đậm, dễ đọc */
+            color: #1d3557; /* Dark blue text color for readability */
             text-align: center;
         }
 
@@ -31,14 +31,14 @@
             width: 90%;
             max-width: 400px;
             padding: 30px 20px;
-            border-radius: 25px; /* Góc bo tròn lớn hơn, hiện đại hơn */
+            border-radius: 25px; 
             
-            /* HIỆU ỨNG GLASSMORPHISM (Kính Mờ) - Nhẹ nhàng */
-            background: rgba(255, 255, 255, 0.2); /* Nền siêu mờ (20% trắng) */
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bóng nhẹ */
-            backdrop-filter: blur(10px); /* Độ mờ cao hơn */
+            /* GLASSMORPHISM EFFECT - Light and elegant */
+            background: rgba(255, 255, 255, 0.2); 
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+            backdrop-filter: blur(10px); 
             -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3); /* Viền sáng mỏng */
+            border: 1px solid rgba(255, 255, 255, 0.3); 
         }
 
         h1 {
@@ -56,7 +56,7 @@
         }
         
         /* -------------------------------------------------------------------------- */
-        /* THIẾT KẾ NÚT BẤM (iOS-Style Button) */
+        /* BUTTON STYLES (iOS-Style) */
         /* -------------------------------------------------------------------------- */
         .contact-button {
             display: flex;
@@ -72,32 +72,33 @@
             transition: transform 0.2s ease-out, background-color 0.2s, box-shadow 0.2s;
             border-radius: 12px;
             
-            /* Nút cũng là Glassmorphism */
-            background: rgba(255, 255, 255, 0.7); /* Nền nút gần như trắng, nhưng trong suốt */
+            /* Button Glassmorphism */
+            background: rgba(255, 255, 255, 0.7); 
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            color: #1d3557; /* Màu chữ đậm cho dễ đọc trên nền sáng */
+            color: #1d3557; 
             border: 1px solid rgba(255, 255, 255, 0.5);
         }
 
-        /* Hiệu ứng di chuột (hover) và nhấn (active) */
+        /* Hover and Active states (Mobile tap effect) */
         .contact-button:hover {
-            background: rgba(255, 255, 255, 0.9); /* Sáng hơn khi hover */
+            background: rgba(255, 255, 255, 0.9); 
         }
         .contact-button:active {
             transform: scale(0.98);
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
         
-        /* Icon */
+        /* Icon styling */
         .contact-button span {
             margin-right: 10px;
             font-size: 1.3em;
         }
 
-        /* Màu Sắc Tương Ứng - Chỉ dùng màu chữ để tạo điểm nhấn */
-        .btn-website { color: #2a9d8f; } /* Màu xanh ngọc (tone tự nhiên) */
-        .btn-hotline { color: #e63946; } /* Màu đỏ san hô (tone ấm) */
-        .btn-location { color: #0077b6; } /* Màu xanh dương iOS */
+        /* Color accents for text/icons */
+        .btn-website { color: #2a9d8f; } /* Teal/Green for Website/Business */
+        .btn-email { color: #f94144; } /* Red for Email */
+        .btn-hotline { color: #e63946; } /* Coral Red for urgency */
+        .btn-location { color: #0077b6; } /* iOS Blue for Maps */
 
         .info-note {
             margin-top: 20px;
@@ -110,23 +111,27 @@
 <body>
 
     <div class="container">
-        <h1>PHÚC SINH SƠN LA</h1>
-        <p>Chọn tùy chọn liên hệ dưới đây:</p>
+        <h1>PHUC SINH SON LA</h1>
+        <p>Choose an option to contact us:</p>
 
         <a href="https://phucsinhsonla.com/about-us" class="contact-button btn-website" target="_blank">
-            <span>☕</span> Trang Chủ & Sản Phẩm
+            <span>☕</span> About Us & Products
+        </a>
+        
+        <a href="mailto:YOUR_EMAIL@example.com?subject=Inquiry from QR Code Landing Page" class="contact-button btn-email">
+            <span>✉️</span> Send Email
         </a>
 
         <a href="tel:+842123850988" class="contact-button btn-hotline">
-            <span>📞</span> Gọi Hotline Tư Vấn
+            <span>📞</span> Call Hotline (+84) 212 3850 988
         </a>
 
         <a href="https://maps.app.goo.gl/AogG5H6mi1f65Dsq6" class="contact-button btn-location" target="_blank">
-            <span>🗺️</span> Chỉ Đường Đến Nhà Máy
+            <span>🗺️</span> Get Directions to the Factory
         </a>
 
         <div class="info-note">
-            <small>Sản phẩm nổi bật: Arabica Blue Sơn La & Cascara Blue Sơn La</small>
+            <small>Featured Products: Arabica Blue Son La & Cascara Blue Son La</small>
         </div>
     </div>
 
